@@ -13,16 +13,23 @@
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
-
+  * Accuracy: 99%
+  * Precision (Class 0): 100%
+  * Precision (Class 1): 87%
+  * Recall (Class 0): 100%
+  * Recall (Class 1): 89%
+  * F1-Score (Class 0): 100%
+  * F1-Score (Class 1): 88%
 
 * Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+  * Accuracy: 100%
+  * Precision (Class 0): 100%
+  * Precision (Class 1): 87%
+  * Recall (Class 0): 100%
+  * Recall (Class 1): 100%
+  * F1-Score (Class 0): 100%
+  * F1-Score (Class 1): 93%
 
 ## Summary
-
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+The results indicate that both machine learning models perform well in terms of accuracy, precision, recall, and F1-Score fot Class 0. However, Model 2 exhibits slightly better performance, especially in terms of recall for Class 1. Model 2 achieves a perfect recall of 100% for Class 1 (high-risk loans), whereas Model 1 achieves 89% recall for the same class. Essentially, Model 2 accurately identifies all instances of high-risk loans without any false negatives for Class 1. Therefore, if it is crucial to accurately identify high-risk loans to minimize financial risk, Model 2 is the recommended choice.
+However, both Model 1 and Model 2 achieve a precision of 87 % for Class 1. This implies that there is a 13 % proportion of loans predicted as high-risk that are actually healthy. Incorrectly categorizing a healthy loan as high-risk poses potential challenges in terms of customer trust and reputational consequences. The loss of customers or credibility can have lasting impacts on long-term profitability. As a result, there is room for improvement in minimizing such misclassifications to enhance trust and fortify the institution's reputation, ultimately contributing to sustained profitability.
